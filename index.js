@@ -46,16 +46,3 @@ function resetTooltip() {
 
 buttonElement.addEventListener("Click", generatePassword);
 password.addEventListener("Click", copyPassword);
-
-passwordContainer.addEventListener("mouseenter", focusPassword);
-passwordContainer.addEventListener("mouseleave", blurPassword);
-
-function focusPassword() {
-  password.classList.add("focused");
-  tooltip.style.opacity = "1";
-}
-
-function blurPassword() {
-  password.classList.remove("focused");
-  tooltip.style.opacity = "0";
-}
